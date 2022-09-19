@@ -1,5 +1,4 @@
-const express = require("express");
-const notes = express.Router();
+const notes = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 const { readFromFile, readAndAppend, writeToFile } = require('../helpers/fsUtils')
 
@@ -10,7 +9,7 @@ notes.get('/', (req, res) => {
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-// POST Route for a new note
+// POST for a new note
 notes.post('/', (req, res) => {
   console.info(`${req.method} request received to add a note`);
   console.log(req.body);
@@ -30,7 +29,7 @@ notes.post('/', (req, res) => {
     res.error('Error in adding note');
   }
 });
-
+// DELETE for a note specified by note_id
 notes.delete('/:note_id', (req, res) => {
   const noteId = req.params.note_id;
   readFromFile('./db/db.json')
@@ -47,4 +46,4 @@ notes.delete('/:note_id', (req, res) => {
     });
 });
 
-module.exports = router;
+module.exports = notes;

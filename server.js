@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const api = require('./routes/notes');
+const api = require('./routes/notes.js');
 //http://localhost:3001
 const PORT = process.env.PORT || 3001;
 
@@ -14,7 +14,7 @@ router.use('/api', api);
 router.use(express.static('public'));
 
 // GET homepage
-router.get('/', (req, res) =>
+router.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
@@ -24,5 +24,5 @@ router.get('/notes', (req, res) =>
 );
 
 router.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT}`)
+  console.log(`Homepage Link: http://localhost:${PORT}`)
 );
