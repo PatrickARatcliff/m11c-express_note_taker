@@ -1,11 +1,11 @@
 const express = require('express');
 
 //http://localhost:3001/api
-// Import our modular routers for notes
-const notesRouter = require('./api/notes');
+//modular router for notes
+const notesRouter = require('./notes');
 
 const router = express();
 
-router.use('./api/notes', notesRouter);
+router.use('/notes', notesRouter);
 
 module.exports = router;
