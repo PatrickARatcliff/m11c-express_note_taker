@@ -17,11 +17,7 @@ notes.post('/', (req, res) => {
   const { title, text } = req.body;
 
   if (req.body) {
-    const newNote = {
-      title,
-      text,
-      note_id: uuidv4(),
-    };
+    const newNote = { title, text, note_id: uuidv4(), };
 
     readAndAppend(newNote, './db/db.json');
     res.json(`Note added successfully`);
