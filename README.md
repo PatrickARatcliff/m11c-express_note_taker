@@ -23,7 +23,7 @@
 - This application requires "express": "^4.17.1": "uuid": "^8.3.2".Simply copy the root directory from the repo and run "npm i" command from your integrated terminal. You should see the node modules directory populate under the repo used for the integrated terminal.
   
 ## Usage Information
-- To use, simply open m11c-express_note_taker directory with the integrated terminal/bash. type the command "npm run start". Enter a title and body text for your note and click the "disk" icon to save the note. You can also delete old notes as desired.
+- To use, simply open m11c-express_note_taker directory with the integrated terminal/bash. type the command "npm run start". Go to http://localhost:3001, click through to the notes page, enter a title and body text for your note and click the "disk" icon to save the note. You can also delete old notes as desired.
   
 ## Contribution Guidelines
 - To contribute to this project, fork the repository at ‘https://github.com/PatrickARatcliff/m11c-express_note_taker', create a pull request with a description for the change and its location.
