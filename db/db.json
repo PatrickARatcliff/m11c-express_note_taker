@@ -1,7 +1,7 @@
 [
     {
-        "title": "test5",
-        "text": "this a test note, you can delete using a DELETE api-request to http://localhost:3001/api/notes/test",
-        "note_id": "65a67989-7521-4cb8-a3a1-37319591a5f7"
+        "title": "Test Note",
+        "text": "Testing123/Testing123/Testing123/Testing123",
+        "note_id": "82932105-c1de-4bf1-8b61-d868e595348a"
     }
 ]
