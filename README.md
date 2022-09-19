@@ -5,10 +5,9 @@
 # GitHub Username: PatrickARatcliff
 # Github Repo URL: https://github.com/PatrickARatcliff/m11c-express_note_taker
 # Github Deployed URL: https://patrickaratcliff.github.io/m11c-express_note_taker/
-# Heroku Repo URL:
-# Heroku Deployed URL:
+# Heroku Deployed URL: https://m11c-expressnotetaker.herokuapp.com/ 
 
-![screenshot-1]()
+![screenshot-1](./src/F971EF3E-95B4-455C-9E3F-B2F132DBFE3F.jpeg)
   
 ## Table of Contents
 - [Project Description](#project-description)
