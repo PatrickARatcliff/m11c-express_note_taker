@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const api = require('./routes/notes.js');
+const api = require('./routes/index.js');
 //http://localhost:3001
 const PORT = process.env.PORT || 3001;
 
@@ -14,7 +14,7 @@ router.use('/api', api);
 router.use(express.static('public'));
 
 // GET homepage
-router.get('*', (req, res) =>
+router.get('/' || '*', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 

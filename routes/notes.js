@@ -25,6 +25,7 @@ notes.post('/', (req, res) => {
     res.error('Error in adding note');
   }
 });
+
 // DELETE for a note specified by note_id
 notes.delete('/:note_id', (req, res) => {
   const noteId = req.params.note_id;
